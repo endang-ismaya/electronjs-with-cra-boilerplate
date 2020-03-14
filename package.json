@@ -1,6 +1,8 @@
 {
   "name": "electron-cra-boilerplate",
   "version": "0.1.0",
+  "description": "put your description here",
+  "author": "endang.ismaya",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -14,7 +16,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-dev": "set ELECTRON_DISABLE_SECURITY_WARNINGS=true && set ELECTRON_START_URL=http://localhost:3000/ && electron .",
+    "dev": "concurrently -k \"npm start\" \"wait-on http://localhost:3000 && npm run electron-dev\"",
+    "package-win": "electron-packager . electron-cra-boilerplate --overwrite --asar --platform=win32 --arch=x64 --icon=build/favicon.ico --prune=true --out=release-builds --app-version=\"1.0.0\" --app-copyright=\"com.endang-ismaya.electron-cra-boilerplate\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +35,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.1",
+    "electron": "^7.1.5",
+    "electron-packager": "^14.1.1",
+    "wait-on": "^3.3.0"
   }
 }
