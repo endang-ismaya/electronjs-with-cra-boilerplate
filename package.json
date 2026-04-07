@@ -40,6 +40,6 @@
     "concurrently": "^5.0.1",
     "electron": "^18.3.7",
     "electron-packager": "^14.1.1",
-    "wait-on": "^3.3.0"
+    "wait-on": "^9.0.4"
   }
 }
