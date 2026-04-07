@@ -39,7 +39,7 @@
   "devDependencies": {
     "concurrently": "^5.0.1",
     "electron": "^39.8.5",
-    "electron-packager": "^14.1.1",
+    "electron-packager": "^17.1.2",
     "wait-on": "^9.0.4"
   }
 }
