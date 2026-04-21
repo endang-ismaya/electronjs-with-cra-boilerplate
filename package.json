@@ -41,5 +41,11 @@
     "electron": "^39.8.5",
     "electron-packager": "^17.1.2",
     "wait-on": "^9.0.4"
+  },
+  "overrides": {
+    "nth-check": ">=2.0.1",
+    "underscore": ">=1.13.8",
+    "@tootallnate/once": ">=3.0.1",
+    "serialize-javascript": ">=7.0.3"
   }
 }
